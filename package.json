@@ -1,0 +1,35 @@
+{
+  "name": "ts-node-starter",
+  "version": "0.0.1",
+  "description": "Typescript & Nodejs starter",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "author": {
+    "name": "Michael Wagner",
+    "email": "mdwranger@gmail.com",
+    "url": "http://wagz.dev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.4.5",
+    "@babel/preset-env": "~7.4.5",
+    "@babel/preset-typescript": "~7.3.3",
+    "@types/jest": "~24.0.15",
+    "@types/node": "~12.0.10",
+    "babel-jest": "~24.8.0",
+    "jest": "~24.8.0",
+    "ts-node": "~8.3.0",
+    "typescript": "~3.5.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "presets": [
+      ["@babel/preset-env", {"targets": {"node": "current"}}],
+      "@babel/preset-typescript"
+    ]
+  }
+}
